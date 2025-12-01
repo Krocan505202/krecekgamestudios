@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — Křeček Games Studios</title>
+  <style>
+    :root{--bg:#ffffff;--fg:#000000;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family: Arial, Helvetica, sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:0}
+    header{background:#000;color:#fff;padding:16px 18px}
+    .logo{font-weight:700;font-size:22px;text-align:center}
+
+    .hero{padding:40px 18px;text-align:center;border-bottom:1px solid #eee}
+    .hero h1{margin:0;font-size:40px}
+    .hero p{color:var(--muted);margin-top:8px;font-size:16px}
+
+    .card{background:#fff;border:1px solid #ddd;border-radius:6px;width:520px;max-width:92%;padding:20px;margin:18px auto;text-align:left}
+    .notfound-illustration{height:160px;display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--muted);background:#f7f7f7;border-radius:6px;margin-bottom:12px}
+
+    .actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+    .button, .primary{background:#000;color:#fff;border:none;padding:10px 14px;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block}
+    .secondary{background:transparent;color:var(--fg);border:1px solid #ddd;padding:10px 14px;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block}
+
+    .muted{color:var(--muted);font-size:13px}
+
+    footer{padding:12px;text-align:center;color:var(--muted);border-top:1px solid #eee;margin-top:20px}
+
+    @media(max-width:600px){
+      .hero h1{font-size:28px}
+      .notfound-illustration{height:120px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Křeček Games Studios</div>
+  </header>
+
+  <section class="hero">
+    <h1>404 — Stránka nenalezena</h1>
+    <p>Oups! Tahle stránka se ztratila v bludišti tunelů pro křečky.</p>
+  </section>
+
+  <div class="card" role="main" aria-labelledby="notfound-title">
+
+
+    <h2 id="notfound-title" style="margin:0 0 8px">Co můžeš zkusit</h2>
+    <p class="muted" style="margin:0 0 12px">
+      Možná stránka neexistuje, byla přejmenována nebo je chybně zadaná adresa.
+    </p>
+
+    <div class="actions" role="navigation" aria-label="Akce">
+      <button class="primary" onclick="window.location.href='index.html'">Na hlavní stránku</button>
+      <button class="secondary" onclick="window.location.href='sources.html'">Sources</button>
+      <button class="secondary" onclick="window.location.href='mailto:krecekgamesstudios@gmail.com'">Kontaktovat tým</button>
+      <button class="secondary" onclick="history.back()">Zpět</button>
+    </div>
+
+    <hr style="border:none;border-top:1px solid #f0f0f0;margin:18px 0">
+
+    <p class="muted" style="font-size:13px;margin:0">
+      Pokud si myslíš, že je to chyba na naší straně, napiš nám — rádi to opravíme.
+    </p>
+  </div>
+
+  <footer>
+    © Křeček Games Studios
+  </footer>
+</body>
+</html>
